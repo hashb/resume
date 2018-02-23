@@ -1,0 +1,132 @@
+%------------------------------------
+% @brief    LaTeX2e Resume for Kamil K Wojcicki
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[letterpaper, margin, line]{resume}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+	colorlinks,
+	linkcolor={red!30!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!70!black}
+}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Times New Roman}
+\setmonofont[Scale=0.8]{Monaco}
+
+
+\begin{document}
+\author{Kautilya Chenna}
+\name{\Large Kautilya Chenna}
+%\email{chenna@outlook.com}
+%\phone{(385) 528-7547}
+%\webpage{https://chenna.me}
+
+\begin{resume}
+
+    % Contact Information
+    \section{\mysidestyle Contact\\Information}
+
+    525 S 900 E, Apt C2                            \hfill phone: \texttt{\href{tel:13855287547}{+1 (385) 528-7547}}          \vspace{0mm}\\\vspace{0mm}%
+    Salt Lake City, Utah \texttt{84102}                          \hfill email: \texttt{\href{mailto:chenna@outlook.com}{chenna@outlook.com}}          \vspace{1pt}%\\\vspace{1pt}%
+
+    % Research Interests
+    \section{\mysidestyle Research\\Interests}
+
+    Robotics: Perception, Manipulation and Cognition; Machine Learning, Computer Vision.
+    \vspace{1pt}
+
+    % Education
+    \section{\mysidestyle Education}
+
+    \textbf{University of Utah}, Salt Lake City, Utah
+    \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Master of Science in Engineering, Robotics} \hfill \textbf{ August 2016 -- present}\vspace{-3mm}\\\vspace{-1mm}%
+    \begin{list2}
+        \item Expected graduation date: May 2018
+        \item Advisors:  \href{https://www.cs.utah.edu/~thermans/}{Dr. Tucker Hermans}
+    \end{list2}\vspace{-1.5mm}
+    \textbf{BMS College of Engineering}, Bangalore, India
+    \vspace{2mm}\\\vspace{1mm}%
+    \textsl{Bachelor of Engineering in Mechanical Engineering} \hfill \textbf{September 2011 -- May 2015}\vspace{-3mm}\\\vspace{-1mm}%
+%	\begin{list2}
+%		\item Graduated with First Class Distinction.
+%	\end{list2}\vspace{-1.5mm}
+
+    % Honours and Awards
+	% ** crickets **
+
+    % Publications
+    \section{\mysidestyle Publications}
+     ``Planning Multi-Fingered Grasps as Probabilistic Inference in a Learned Deep Network''; Qingkai Lu, \\
+     \mbox{\bf Kautilya Chenna}, Balakumar Sundaralingam, Tucker Hermans; \textit{International Symposium on Robotics Research (ISRR),} 2017. \texttt{[\href{http://www.cs.utah.edu/~thermans/papers/lu-isrr2017-deep-multifinger-grasping.pdf}{PDF}]}
+
+    % Professional Experience
+    \section{\mysidestyle Experience}
+
+    \href{https://robot-learning.cs.utah.edu}{\textbf{Learning Lab for Manipulation Autonomy (LL4MA)}}, University of Utah \vspace{1pt}\\\vspace{1pt}%
+    \textsl{Graduate Research Assistant} \hfill \textbf{August 2016 -- present}\\
+Currently working under Dr. Tucker Hermans on developing a machine learning algorithm that predicts if the robot will be in collision for a given configuration using only pointcloud data and joint states.
+
+
+    \href{http://www.aero.iisc.ernet.in/~dinesh/web/}{\textbf{NMCAD Lab}}, Indian Institute of Science \vspace{1pt}\\\vspace{1pt}%
+    \textsl{Project Assistant} \hfill \textbf{January 2015 -- July 2016}\\
+    Worked under Prof. Dineshkumar Harursampath on the project \textit{``Design and Fabrication of a Conventional Flapping Wing Micro Aerial Vehicle.''} We worked towards developing a platform for testing various wing designs, materials and mechanisms on the MAV.
+
+    
+    %__________________________________________________________________________________________________________________
+	% Projects
+	\section{\mysidestyle Selected\\Projects}
+	
+	\textbf{Baxter Grasp Pipeline}\hfill \textbf{January 2017}
+    \begin{list2}
+	\item Developed a grasping pipeline to grasp objects on a table.
+	\item Tools Used: PCL, ROS, Moveit, Graspit, tensorflow
+	\end{list2}\vspace{-1.5mm}
+
+	\textbf{Video Action recognition using Deep Learning}\hfill \textbf{October 2016}
+	\begin{list2}
+	\item Implemented a Deep Neural Network using tensorflow to classify actions in scenes.
+	\item Achieved a mean average precision of 15.4\% on the Charades Dataset.
+	\end{list2}
+	
+
+
+    %__________________________________________________________________________________________________________________
+    % Skills
+    \section{\mysidestyle Skills} 
+
+    \textbf{Languages}: Python, MATLAB, C++, Java. \\[1mm]
+    \textbf{Tools}: PCL (Pointcloud Library), ROS (Robot Operating System), OpenCV, Tensorflow, Blender (3D Graphics), Keras, Graspit Simulator, Gazebo, V-REP. \\[1mm]
+    \textbf{Design Tools}: SolidWorks, PTC Creo Parametric, Autodesk Inventor, ANSYS. \\[1mm]
+    \textbf{Robots}: KUKA LBR4, Rethink Robotics Baxter, SimLab's Allegro Hand , Quanser HD2
+    
+    % Relevant Coursework
+    \section{\mysidestyle Relevant\\Coursework}
+    Robot Kinematics and Dynamics, Controls (Linear, Nonlinear, and Embedded), Computer Vision, Artificial Intelligence, Motion Planning, Machine Learning, Probabilistic Modeling, System ID for Robotics.
+    
+    
+    \section{\mysidestyle Links}
+	\textbf{Website}: \texttt{\href{https://chenna.me}{https://chenna.me}} \\[1mm]
+    \textbf{Linkedin}: \texttt{\href{https://www.linkedin.com/in/kautilyachenna/}{https://www.linkedin.com/in/kautilyachenna/}}\\[1mm]
+    \textbf{Github}: \texttt{\href{https://github.com/hashb}{https://github.com/hashb}}
+    
+
+\begin{center}
+	{\scriptsize  Last updated: \today\- •\- Typeset in \href{}{
+			\fontspec{Times New Roman}\XeTeX }\\
+		\href{http://chenna.me/resume}{http://chenna.me/resume}}
+\end{center}
+
+\end{resume}
+\end{document}
+
+% EOF
+
