@@ -839,6 +839,10 @@
 \newcommand{\mysidestyle}{\small\sc}
 \newcommand{\myheadingstyle}{\sl}
 \newcommand{\mysubheadingstyle}{\sl}
+\newcommand{\sectionseperator}{
+\vspace*{-18pt}
+\rule[0.01pt]{\linewidth}{0.005pt}
+\vspace*{-25pt}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

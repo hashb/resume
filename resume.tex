@@ -2,16 +2,16 @@
 % @brief    LaTeX2e Resume for Kamil K Wojcicki
 
 %!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+%!TEX encoding = UTF-8
 
-\documentclass[letterpaper, margin, line]{resume}
+\documentclass[letterpaper, margin, line, 10.5pt]{resume}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \hypersetup{
-	colorlinks,
-	linkcolor={red!30!black},
-	citecolor={blue!50!black},
-	urlcolor={blue!70!black}
+	colorlinks=true,
+	linkcolor=cyan,
+	filecolor=blue,      
+	urlcolor=magenta,
 }
 
 % FONTS
@@ -25,114 +25,170 @@
 \begin{document}
 \author{Kautilya Chenna}
 \name{\Large Kautilya Chenna}
-%\email{chenna@outlook.com}
-%\phone{(385) 528-7547}
-%\webpage{https://chenna.me}
+% \address{1495 E 100 S rm 1550 MEK\\
+% Salt Lake City, Utah 84112}
+% \email{chenna@outlook.com}
+% \phone{(385) 528-7547}
+% \webpage{https://chenna.me}
 
 \begin{resume}
 
-    % Contact Information
-    \section{\mysidestyle Contact\\Information}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%% Contact Information %%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{\myheadingstyle Contact \\ Information}
 
     \texttt{1495 E 100 S rm 1550 MEK}                            \hfill phone: \texttt{\href{tel:13855287547}{+1 (385) 528-7547}}          \vspace{0mm}\\\vspace{0mm}%
-    \texttt{Salt Lake City, Utah 84112}                          \hfill email: \texttt{\href{mailto:chenna@outlook.com}{chenna@outlook.com}}       \vspace{-0.5mm}% %  \vspace{0.25mm}%\\\vspace{1pt}%
+    \texttt{Salt Lake City, Utah 84112}                          \hfill email: \texttt{\href{mailto:chenna@outlook.com}{chenna@outlook.com}}       %
 
-    % Research Interests
-    \section{\mysidestyle Research\\Interests}
 
-    Robotics: Perception, Manipulation and Cognition; Machine Learning, Computer Vision.
-    \vspace{1pt}
-
-    % Education
-    \section{\mysidestyle Education}
-
-    \textbf{University of Utah}, Salt Lake City, Utah \hfill \textbf{GPA: 3.40}
-    \vspace{0.5mm}\\\vspace{1mm}%
-    \textsl{Master of Science in Robotics} \hfill \textbf{ August 2016 -- present}\vspace{-3mm}\\\vspace{-1mm}%
-    \begin{list2}
-%        \item Expected to graduate: Spring 2018
-        \item Advisors:  \href{https://www.cs.utah.edu/~thermans/}{Dr. Tucker Hermans}
-    \end{list2}\vspace{-1.5mm}
-%    \textbf{BMS College of Engineering}, Bangalore, India
-%    \vspace{0.5mm}\\\vspace{1mm}%
-%    \textsl{Bachelor of Engineering in Mechanical Engineering} \hfill \textbf{September 2011 -- May 2015}\vspace{-3mm}\vspace{-1mm}%
-%	\begin{list2}
-%		\item Graduated with First Class Distinction.
-%	\end{list2}\vspace{-1.5mm}
+    %%%%%%%%%%%%%%
+    %%% Skills %%%
+    %%%%%%%%%%%%%%
+    
+	\sectionseperator
+	\section{\myheadingstyle Skills} 
 	
-    % Relevant Coursework
-	\section{\mysidestyle Relevant\\Coursework}
-	Probabilistic Modeling, 3D Computer Vision, Artificial Intelligence, Motion Planning, Machine Learning, Robotics and System Identification.\vspace{-1mm}%
+	\textbf{Languages}: Python, MATLAB, C++. \\[1mm]
+	\textbf{Tools}: PCL, ROS, Gazebo, OpenCV, Tensorflow, Blender, Keras. \\[1mm]
+	% \textbf{Design Tools}: SolidWorks, PTC Creo Parametric, Autodesk Inventor, ANSYS. \\[1mm]
+	\textbf{Robots}: KUKA LBR4+, Rethink Robotics Baxter, SimLab's Allegro Hand, Quanser HD2.%
+
+
+	%%%%%%%%%%%%%%%%%
+    %%% Education %%%
+    %%%%%%%%%%%%%%%%%
     
+    \sectionseperator
+    \section{\myheadingstyle Education}
+    \textbf{University of Utah}, Salt Lake City, Utah \hfill \texttt{GPA: 3.40}
+    \\\vspace{1mm}%
+    \textsl{Master of Science in Robotics} \hfill \textbf{ Aug 2016 -- Aug 2018}\\%
+	% \begin{list2}
+	% 	\item Expected to graduate: Spring 2018
+	% 	\item Advisor:  \href{https://www.cs.utah.edu/~thermans/}{Dr. Tucker Hermans}
+	% \end{list2}\vspace{-1.5mm}
+    \textbf{BMS College of Engineering}, Bangalore, India \hfill \texttt{GPA: 3.52}
+    \\\vspace{1mm}%
+    \textsl{Bachelor of Engineering in Mechanical Engineering (Robotics)} \hfill \textbf{Sept 2011 -- May 2015}\\%
+	% \begin{list2}
+	% 	\item Graduated with First Class Distinction.
+	% \end{list2}\vspace{-1.5mm}
+	\textbf{Relevant Coursework:} Probabilistic Modeling, 3D Computer Vision, Artificial Intelligence, Motion Planning, Machine Learning, Robotics, Robot Control and System Identification.
+
+	%%%%%%%%%%%%%%%%%%
+    %%% Coursework %%%
+    %%%%%%%%%%%%%%%%%%
     
-    % Publications
-    \section{\mysidestyle Publications}
+    % \sectionseperator
+	% \section{\myheadingstyle Coursework}
+	% Probabilistic Modeling, 3D Computer Vision, Artificial Intelligence, Motion Planning, Machine Learning, Robotics and System Identification.%
+
+
+    %%%%%%%%%%%%%%%%%%%%
+    %%% Publications %%%
+    %%%%%%%%%%%%%%%%%%%%
+    
+    \sectionseperator
+    \section{\myheadingstyle Publications}
      ``Planning Multi-Fingered Grasps as Probabilistic Inference in a Learned Deep Network''; Qingkai Lu, \\
-     \mbox{\bf Kautilya Chenna}, Balakumar Sundaralingam, Tucker Hermans; \textit{International Symposium on Robotics Research (ISRR),} 2017. \texttt{[\href{http://www.cs.utah.edu/~thermans/papers/lu-isrr2017-deep-multifinger-grasping.pdf}{PDF}]}
-     \vspace{-1mm}%
+     \mbox{\bf Kautilya Chenna}, Balakumar Sundaralingam, Tucker Hermans; \textit{International Symposium on Robotics Research (ISRR),} 2017. \texttt{[\href{http://www.cs.utah.edu/~thermans/papers/lu-isrr2017-deep-multifinger-grasping.pdf}{PDF}]} \texttt{[\href{https://robot-learning.cs.utah.edu/project/grasp\_inference}{CODE}]}%
 
-    % Professional Experience
-    \section{\mysidestyle Experience}
 
-    \href{https://robot-learning.cs.utah.edu}{\textbf{Learning Lab for Manipulation Autonomy (LL4MA)}}, University of Utah \vspace{1pt}\\\vspace{1pt}%
-    \textsl{Graduate Research Assistant} \hfill \textbf{August 2016 -- present}\\
-	Currently working under Dr. Tucker Hermans on developing a robust and fast collision detection algorithm using deep learning to detect robot collisions using pointcloud data.
+    %%%%%%%%%%%%%%%%%%
+    %%% Experience %%%
+    %%%%%%%%%%%%%%%%%%
+    
+    \sectionseperator
+    \section{\myheadingstyle Experience}
 
-	
+    \href{https://robot-learning.cs.utah.edu}{\textbf{Learning Lab for Manipulation Autonomy (LL4MA Lab)}}, University of Utah \vspace{1pt}\\\vspace{1pt}%
+    \textsl{Graduate Research Assistant} \hfill \textbf{August 2016 -- present}\\ \vspace{-4.5mm}
+	\begin{list2}
+		\item Built a fast object detection and tracking pipeline, which is used by multiple teams in the Lab.
+		\item Implemented Grasp Controllers and end to end Grasping Pipelines with motion planning and execution.
+	\end{list2}\vspace{-1.5mm}
 
     \href{http://www.aero.iisc.ernet.in/~dinesh/web/}{\textbf{NMCAD Lab}}, Indian Institute of Science \vspace{1pt}\\\vspace{1pt}%
-    \textsl{Project Assistant} \hfill \textbf{January 2015 -- July 2016}\\
-    Worked under Prof. Dineshkumar Harursampath on the project \textit{``Design and Fabrication of a Conventional Flapping Wing Micro Aerial Vehicle.''} We worked towards developing a platform for testing various wing designs, materials and mechanisms on the MAV.
+    \textsl{Research Intern} \hfill \textbf{January 2015 -- July 2016}\\ \vspace{-4.5mm}
+    \begin{list2}
+    	\item Worked on the design and fabrication of a Flapping Wing Micro Aerial Vehicle (MAV).
+    	\item Developed autonomous navigation and collision checking algorithms for the MAV.
+    \end{list2}\vspace{-0.5mm}
 
+
+    %%%%%%%%%%%%%%%%
+	%%% Projects %%%
+    %%%%%%%%%%%%%%%%
     
-    %__________________________________________________________________________________________________________________
-	% Projects
-	\section{\mysidestyle Selected\\Projects}
-	\textbf{Semantic Segmentation of Images using Deep Learning} \hfill \textbf{March 2018}
+	\sectionseperator
+	\section{\myheadingstyle Selected \\ Projects}
+	\textbf{Extrinsic Calibration of Stereo Camera and Velodyne LiDAR} \hfill \textbf{June 2018}
 	\begin{list2}
-		\item Implemented several graphical models and a deep learning algorithm for pixel wise segmentation of images
-		\item Achieved near state of the art performance with the deep learning algorithm (VGG16 + CRF).
-	\end{list2}\vspace{-1.5mm}
+		\item Developed a ROS package to automate calibration between Velodyne VLP-16 and ZED stereo camera.
+		\item Reduced the mean point to point error by \textbf{72\%} compared to manual feature based calibration.
+	\end{list2}\vspace{-3.2mm}
 	
-	\textbf{Twitter Spam Detection} \hfill \textbf{December 2017}
+	\textbf{Real-time Semantic Segmentation on Low-Power Android Devices} \hfill \textbf{May 2018}
 	\begin{list2}
-		\item Implemented a machine learning algorithm from scratch to predict if a twitter user's content is spam.
-		\item Ranked 1st in \href{https://www.kaggle.com/c/uofu-ml-fall-2017}{kaggle in-class competition}.
-	\end{list2}\vspace{-1.5mm}
+		\item Developed a fast background subtraction for portrait video based on modified \textbf{SegNet} model.
+		\item Model achieved a \textbf{mean IoU of 87.3\% at 30 FPS} on Google Pixel 2.
+	\end{list2}\vspace{-3.2mm}
+
+	\textbf{Estimating Depth from a single image using FCN Network} \hfill \textbf{March 2018}
+	\begin{list2}
+		\item Implemented a modified \textbf{FCN Net} and trained it on NYU Depth Dataset and KITTI Dataset.
+		\item Model achieved a mean \textbf{RMSE error of 0.294} on NYU Depth and \textbf{0.312} on KITTI Dataset.
+	\end{list2}\vspace{-3.2mm}
+
+	\textbf{Object Detection and Segmentation in Point Cloud data using PointNet} \hfill \textbf{January 2018}
+	\begin{list2}
+		\item Trained modified \textbf{PointNet} model on \textbf{YCB object dataset} and \textbf{BigBird dataset}.
+		\item Model runs at \textbf{24 fps} on a NVIDIA GeForce 1060 GPU with an accuracy of 88.3\%.
+	\end{list2}\vspace{-3.2mm}
+
+	\textbf{Grasp Collision detection using Convolutional Neural Networks} \hfill \textbf{Ongoing}
+	\begin{list2}
+		\item Developed a CNN model to detect collisions btw robot and environment using PointClouds and JointState.
+		\item Model classifies collisions with an \textbf{accuracy of 84.7\%} and is \textasciitilde 30\% faster than FCL.
+	\end{list2}\vspace{-3.2mm}
+	
+	\textbf{The Search for Twitter Spam Bots} \hfill \textbf{December 2017}
+	\begin{list2}
+		\item Implemented a machine learning algorithms from scratch to predict if a twitter user's content is spam.
+		\item \textbf{Boosted trees} achieved an accuracy of \textbf{97\%} and \textbf{ranked 1st} in \href{https://www.kaggle.com/c/uofu-ml-fall-2017/leaderboard}{Kaggle competition}.
+	\end{list2}\vspace{-3.2mm}
 
 	\textbf{Video Action recognition using Deep Learning}\hfill \textbf{October 2017}
 	\begin{list2}
-	\item Implemented a Deep Neural Network using tensorflow to classify actions in scenes.
-	\item Achieved performance comparable to the state of the art.
-	\end{list2}\vspace{-1.5mm}
+	\item Implemented a \textbf{Bi-Directional LSTM Model} on \textbf{VGG16} Net using Keras to classify actions in scenes.
+	\item Achieved a Mean Average Precision of \textbf{15.7 mAP} compared to the State of the Art of 21.4 mAP.
+	\end{list2}\vspace{-3.2mm}
 
-	\textbf{Baxter Grasping}\hfill \textbf{January 2017}
+	\textbf{Autonomous Grasp Inference and Execution using Baxter and KUKA lwr4 Robots}\hfill \textbf{January 2017}
 	\begin{list2}
-		\item Developed a grasping pipeline to grasp objects on a table autonomously.
-		\item Tools Used: PCL, ROS, Moveit, tensorflow
-	\end{list2}\vspace{-1.5mm}
-		
+		\item Designed an end to end grasping pipeline to grasp objects on a table autonomously.
+		\item Training data was collected in Gazebo simulation and tested in real world. [\href{https://robot-learning.cs.utah.edu/project/grasp\_inference}{ISRR 2017}]
+	\end{list2}\vspace{-3.2mm}
 
+	\textbf{Others:} Motion Planning: TrajOpt, RRT and Variants, RealTime RRT*; Image Segmentation with GMM, Image De-noising using MRF; 
+	
 
-    %__________________________________________________________________________________________________________________
-    % Skills
-    \section{\mysidestyle Skills} 
-
-    \textbf{Languages}: Python, MATLAB, C++, Java. \\[1mm]
-    \textbf{Tools}: PCL (Pointcloud Library), ROS (Robot Operating System), OpenCV, Tensorflow, Blender, Keras. \\[1mm]
-    %\textbf{Design Tools}: SolidWorks, PTC Creo Parametric, Autodesk Inventor, ANSYS. \\[1mm]
-    \textbf{Robots}: KUKA LBR4, Rethink Robotics Baxter, SimLab's Allegro Hand, Quanser HD2
-    
-    
-    \section{\mysidestyle Links}
-	\textbf{Website}: \texttt{\href{https://chenna.me}{https://chenna.me}} \\[1mm]
-    \textbf{Linkedin}: \texttt{\href{https://www.linkedin.com/in/kautilyachenna/}{https://www.linkedin.com/in/kautilyachenna/}}\\[1mm]
-    \textbf{Github}: \texttt{\href{https://github.com/hashb}{https://github.com/hashb}}
-    
+	%%%%%%%%%%%%%
+	%%% Links %%%
+	%%%%%%%%%%%%%
+	
+	\sectionseperator
+    \section{\myheadingstyle Links}
+	\textbf{Website}: \texttt{\href{https://chenna.me}{https://chenna.me}} \hspace{2mm}%\\[1mm]
+    \textbf{Linkedin}: \texttt{\href{https://www.linkedin.com/in/kautilyachenna/}{kautilyachenna}} \hspace{2mm}%\\[1mm]
+    \textbf{Github}: \texttt{\href{https://github.com/hashb}{hashb}}
+    \vspace{-3.2mm}
 
 \begin{center}
 	{\scriptsize  Last updated: \today\- •\- Typeset in \href{}{
-			\fontspec{Times New Roman}\XeTeX }\\
+			\fontspec{Alegreya}\XeTeX }\\
 		\href{http://chenna.me/resume}{http://chenna.me/resume}}
 \end{center}
 
