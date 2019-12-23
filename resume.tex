@@ -4,8 +4,22 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8
 
-\documentclass[letterpaper, margin, line, 11pt]{resume}
-\usepackage{hyperref}
+\documentclass[margin, line]{resume}
+\usepackage[pdfpagelabels=false,
+			pdfauthor={Kautilya Chenna},
+			pdftitle={Kautilya Chenna's Resume created on \today},
+			pdfsubject={Resume},
+			pdfkeywords={Resume,
+						 Robotics,
+						 Machine Learning,
+						 Motion Planning,
+						 Trajectory Optimization,
+						 ROS,
+						 OpenCV,
+						 TensorFlow,
+						 PDF,
+						 LaTeX}]{hyperref}
+
 \usepackage{xcolor}
 \hypersetup{
 	colorlinks=true,
@@ -15,44 +29,45 @@
 }
 
 % FONTS
-\usepackage{xunicode}
+%\usepackage{xunicode}
 \usepackage{xltxtra}
-\defaultfontfeatures{Mapping=tex-text}
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Times New Roman}
-\setmonofont[Scale=0.85]{Menlo}
+\setmainfont[SmallCapsFont={Alegreya},
+			 SmallCapsFeatures={Letters=SmallCaps}]{Georgia}
 
 
 \begin{document}
 \author{Kautilya Chenna}
-\name{\Large Kautilya Chenna}
-% \address{1495 E 100 S rm 1550 MEK\\
-% Salt Lake City, Utah 84112}
-% \email{chenna@outlook.com}
-% \phone{(385) 528-7547}
-% \webpage{https://chenna.me}
+\name{\Huge \textsc{Kautilya Chenna}}
+{
+	\sc
+	\hfill \href{mailto:chenna@outlook.com}{chenna@outlook.com}		\vspace{0mm}\\\vspace{0mm}%
+	\hfill San Francisco, CA										\vspace{0mm}\\\vspace{-10.5mm}%
+}
 
 \begin{resume}
 
+	\section{\mysidestyle \textsc{Summary}}
+	lorem ipsum 
 
 
     %%%%%%%%%%%%%%
     %%% Skills %%%
     %%%%%%%%%%%%%%
     
-    
-	\section{\myheadingstyle Skills} 
+    \sectionline
+	\section{\mysidestyle \textsc{Skills}} 
 	
 	\textbf{Languages}: C++, Python, MATLAB. \\[1mm]
 	\textbf{Tools}: PCL, ROS, Gazebo, OpenCV, Tensorflow, Keras. \\[1mm]
-	% \textbf{Design Tools}: SolidWorks, PTC Creo Parametric, Autodesk Inventor, ANSYS. \\[1mm]
 	\textbf{Robots}: KUKA LBR4+, Rethink Robotics Baxter, SimLab's Allegro Hand, Quanser HD2.%
+
 
     %%%%%%%%%%%%%%%%%%
 	%%% Experience %%%
 	%%%%%%%%%%%%%%%%%%
 	
-	\sectionseperator
-	\section{\myheadingstyle Experience}
+	\sectionline
+	\section{\mysidestyle \textsc{Experience}}
 	
 	\href{https://www.omron.com/global/americas/usa.html}{\textbf{Omron Research Center of America (ORCA)}} \vspace{1pt}\\\vspace{1pt}%
 	\textsl{Motion Planning Engineer} \hfill \textbf{November 2018 -- Present}\\ \vspace{-4.5mm}
@@ -75,12 +90,13 @@
 	%    	\item Developed autonomous navigation and collision checking algorithms for the MAV.
 	%    \end{list2}\vspace{-0.1mm}
 
+
 	%%%%%%%%%%%%%%%%%
     %%% Education %%%
     %%%%%%%%%%%%%%%%%
     
-    \sectionseperator
-    \section{\myheadingstyle Education}
+	\sectionline
+    \section{\mysidestyle \textsc{Education}}
     \textbf{University of Utah}, Salt Lake City, Utah %\hfill \texttt{GPA: 3.40}
     \\\vspace{1mm}%
     \textsl{Master of Science in Robotics} \hfill \textbf{ Aug 2016 -- Aug 2018}\\%
@@ -96,34 +112,23 @@
 	% \end{list2}\vspace{-1.5mm}
 	\textbf{Relevant Coursework:} Probabilistic Modeling, 3D Computer Vision, Artificial Intelligence, Motion Planning, Machine Learning, Convex Optimization, Robotics, Robot Control and System Identification.
 
-	%%%%%%%%%%%%%%%%%%
-    %%% Coursework %%%
-    %%%%%%%%%%%%%%%%%%
-    
-    % \sectionseperator
-	% \section{\myheadingstyle Coursework}
-	% Probabilistic Modeling, 3D Computer Vision, Artificial Intelligence, Motion Planning, Machine Learning, Robotics and System Identification.%
-
 
     %%%%%%%%%%%%%%%%%%%%
     %%% Publications %%%
     %%%%%%%%%%%%%%%%%%%%
     
-    \sectionseperator
-    \section{\myheadingstyle Publications}
-     ``Planning Multi-Fingered Grasps as Probabilistic Inference in a Learned Deep Network''; Qingkai Lu, \\
-     \mbox{\bf Kautilya Chenna}, Balakumar Sundaralingam, Tucker Hermans; \textit{International Symposium on Robotics Research (ISRR),} 2017. \texttt{[\href{http://www.cs.utah.edu/~thermans/papers/lu-isrr2017-deep-multifinger-grasping.pdf}{PDF}]} \texttt{[\href{https://robot-learning.cs.utah.edu/project/grasp\_inference}{CODE}]}%
-
-
-
+	\sectionline
+    \section{\mysidestyle \textsc{Publications}}
+     ``Planning Multi-Fingered Grasps as Probabilistic Inference in a Learned Deep Network''; Qingkai Lu,
+     \mbox{\bf Kautilya Chenna}, Balakumar Sundaralingam, Tucker Hermans; \textit{International Symposium on\\ Robotics Research (ISRR),} 2017. \texttt{[\href{http://www.cs.utah.edu/~thermans/papers/lu-isrr2017-deep-multifinger-grasping.pdf}{PDF}]} \texttt{[\href{https://robot-learning.cs.utah.edu/project/grasp\_inference}{CODE}]}%
 
 
     %%%%%%%%%%%%%%%%
 	%%% Projects %%%
     %%%%%%%%%%%%%%%%
     
-	\sectionseperator
-	\section{\myheadingstyle Selected \\ Projects}
+	\sectionline
+	\section{\mysidestyle \textsc{Selected \\ Projects}}
 
 	\textbf{Others:} Motion Planning: TrajOpt, RRT and Variants, RealTime RRT*; Image Segmentation with GMM, Image De-noising using MRF; 
 	
@@ -131,27 +136,27 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%% Contact Information %%%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\sectionseperator
-	\section{\myheadingstyle Contact \\ Information}
-	
-	\texttt{San Francisco Bay Area}                            \hfill phone: \texttt{\href{tel:13855551234}{+1 (385) 555-xxxx }}          \vspace{0mm}\\\vspace{0mm}%
-	\texttt{Sunny California}                          \hfill email: \texttt{\href{mailto:chenna@outlook.com}{chenna@outlook.com}}       %
+%	
+%%	\sectionseperator
+%	\section{\mysidestyle \textsc{Contact \\ Information}}
+%	
+%	\texttt{San Francisco Bay Area}                            \hfill phone: \texttt{\href{tel:13855551234}{+1 (385) 555-xxxx }}          \vspace{0mm}\\\vspace{0mm}%
+%	\texttt{California {\textemdash} 945xx}                          \hfill email: \texttt{\href{mailto:chenna@outlook.com}{chenna@outlook.com}}       %
+
 
 	%%%%%%%%%%%%%
 	%%% Links %%%
 	%%%%%%%%%%%%%
 	
-	\sectionseperator
-    \section{\myheadingstyle Links}
+	\sectionline
+    \section{\mysidestyle \textsc{Links}}
 	\textbf{Website}: \texttt{\href{https://chenna.me}{https://chenna.me}} \hspace{2mm}%\\[1mm]
     \textbf{Linkedin}: \texttt{\href{https://www.linkedin.com/in/kautilyachenna/}{kautilyachenna}} \hspace{2mm}%\\[1mm]
     \textbf{Github}: \texttt{\href{https://github.com/hashb}{hashb}}
     \vspace{-3.2mm}
 
 \begin{center}
-	{\scriptsize  Last updated: \today\- •\- Typeset in \href{}{
-			\fontspec{Alegreya}\XeTeX }\\
+	{\scriptsize  Last updated: \today\- •\- Typeset in {\fontspec{Alegreya}\XeTeX }\\
 		\href{https://chenna.me/resume}{https://chenna.me/resume}}
 \end{center}
 
