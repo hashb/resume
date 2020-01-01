@@ -4,6 +4,10 @@
  * Basic
  */
 
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+
 html {
     height: 100%;
     margin: 0;
@@ -11,8 +15,10 @@ html {
 }
 body {
     margin: 0;
-    font-family: "Inconsolata";
+    font-family: "Karla";
     height: 100%;
+    background-color: #fffff8;
+    color: #111111;
 }
 a {
     text-decoration: none;

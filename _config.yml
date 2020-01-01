@@ -1,24 +1,13 @@
 title: Chenna Kautilya
 url: "https://resume.chenna.me"
-baseurl: "/"
+baseurl: ""
 
 markdown: kramdown
-#ins_logo: "./bits-logo.png"
-
-# tracking_id: #
-
-# footer: yes
-# footer_url: "https://github.com/ankitsultana"
-# footer_text: "Page design by Ankit Sultana"
 
 sass:
     style: compressed
     sass_dir: _sass
 
 nav:
- - name: "About"
-   link: "https://chenna.me/"
- - name: "Resume"
-   link: "https://github.com/hashb/resume/raw/robotics/resume.pdf"
- - name: "Contact"
-   link: "contact"
+ - name: "hire@chenna.me"
+   link: "mailto:hire@chenna.me"
