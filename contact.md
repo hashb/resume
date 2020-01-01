@@ -3,7 +3,7 @@ layout: default
 is_contact: true
 ---
 
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
+* Email: [hire@chenna.me](mailto:hire@chenna.me)
 
 * Phone: [+91-123123](tel:+91-123123)
 
@@ -11,16 +11,8 @@ is_contact: true
 
 ## Mailing Address
 
-> 221B, Baker Street
+> San Francisco Bay Area
 >
-> London
->
-> United Kingdom
+> California
 
 ---
-
-## Social
-
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
