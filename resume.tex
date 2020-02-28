@@ -2,7 +2,7 @@
 % @brief    LaTeX2e Resume for Kamil K Wojcicki
 
 %!TEX TS-program = xelatex
-%!TEX encoding = UTF-8
+%!TEX encoding = UTF-8 Unicode
 
 \documentclass[margin, line]{resume}
 \usepackage[unicode=true,
@@ -31,7 +31,7 @@
 % FONTS
 \usepackage{xltxtra}
 \setmainfont[SmallCapsFont={Alegreya},
-             SmallCapsFeatures={Letters=SmallCaps}]{Georgia}
+             SmallCapsFeatures={Letters=SmallCaps}]{Times}
 
 
 \begin{document}
@@ -40,13 +40,19 @@
 {
     \sc
     \hfill \href{mailto:chenna@outlook.com}{chenna@outlook.com}     \vspace{0mm}\\\vspace{0mm}%
-    \hfill San Francisco, CA                                        \vspace{0mm}\\\vspace{-10.5mm}%
+    \hfill San Francisco Bay Area                                   \vspace{0mm}\\\vspace{-10.5mm}%
 }
 
 \begin{resume}
 
     \section{\mysidestyle \textsc{Summary}}
-    lorem ipsum
+    I joined Omron Research as their 4th employee and have worked on a wide
+    range of research projects mainly focused on Optimization for Motion
+    Planning and Control. Before joining Omron, I spent 2 years at LL4MA Lab
+    working on Deep Learning for robotic manipulation tasks.\\[1mm]
+    I focus on delivering clean and maintainable code while iterating quickly.
+    I am passionate about using technology to find solutions to our growing
+    social needs.
 
 
     %%%%%%%%%%%%%%
@@ -56,9 +62,9 @@
     \sectionline
     \section{\mysidestyle \textsc{Skills}}
 
-    \textbf{Languages}: C++, Python, MATLAB. \\[1mm]
-    \textbf{Tools}: PCL, ROS, Gazebo, OpenCV, Tensorflow, Keras. \\[1mm]
-    \textbf{Robots}: KUKA LBR4+, Rethink Robotics Baxter, SimLab's Allegro Hand, Quanser HD2.%
+    \textbf{Languages}: C++, Python, MATLAB \\[1mm]
+    \textbf{Tools}: PCL, ROS, Gazebo, OpenCV, Tensorflow, Keras, Jenkins, Docker and k8s \\[1mm]
+    \textbf{Robots}: Omron Adept Robots, KUKA LBR4+, Rethink Robotics Baxter, SimLab's Allegro Hand%
 
 
     %%%%%%%%%%%%%%%%%%
@@ -69,17 +75,25 @@
     \section{\mysidestyle \textsc{Experience}}
 
     \href{https://www.omron.com/global/americas/usa.html}{\textbf{Omron Research Center of America (ORCA)}} \vspace{1pt}\\\vspace{1pt}%
-    \textsl{Motion Planning Engineer} \hfill \textbf{November 2018 -- Present}\\ \vspace{-4.5mm}
+    \textsl{Robotics Software Engineer} \hfill \textbf{November 2018 -- Present}\\ \vspace{-4.5mm}
     \begin{list2}
-        \item Motion Planning and Grasp Planning for Random Bin Picking
-        \item Trajectory Optimization and more stuff. Ssshhhhh....
+        \item Developed test framework for an end-to-end random bin picking pipeline
+        \item Designed and developed a real-time middleware for reactive robot control
+        \item Created standards and guidelines for code reviews and code quality
+        \item Built and maintained Jenkins CI infrastructure used by 4 teams
+        \item Saved the organization >\$150k by reviewing and selecting an 
+        opensource \\alternative to a commercial product
     \end{list2}\vspace{-2.25mm}
 
     \href{https://robot-learning.cs.utah.edu}{\textbf{Learning Lab for Manipulation Autonomy (LL4MA Lab)}}, University of Utah \vspace{1pt}\\\vspace{1pt}%
     \textsl{Graduate Research Assistant} \hfill \textbf{August 2016 -- 2018}\\ \vspace{-4.5mm}
     \begin{list2}
-        \item Built a fast object detection and tracking pipeline, which is used by multiple teams in the Lab.
-        \item Implemented Grasp Controllers and end-to-end Grasping Pipelines with motion planning and execution.
+        \item Built a fast object detection and tracking pipeline, which is
+        used by multiple teams in the Lab.
+        \item Implemented Grasp Controllers and end-to-end Grasping Pipelines
+        with motion planning and execution.
+        \item Created and maintained a ROS wrapper for Blensor, a kinect camera
+        simulator with realistic error models
     \end{list2}\vspace{-0.1mm}
 
     %    \href{http://www.aero.iisc.ernet.in/~dinesh/web/}{\textbf{NMCAD Lab}}, Indian Institute of Science \vspace{1pt}\\\vspace{1pt}%
@@ -98,18 +112,21 @@
     \section{\mysidestyle \textsc{Education}}
     \textbf{University of Utah}, Salt Lake City, Utah %\hfill \texttt{GPA: 3.40}
     \\\vspace{1mm}%
-    \textsl{Master of Science in Robotics} \hfill \textbf{ Aug 2016 -- Aug 2018}\\%
+    \textsl{Master of Science in Mechanical Engineering} \hfill \textbf{ Aug 2016 -- Aug 2018}\\%
     % \begin{list2}
     % 	\item Expected to graduate: Spring 2018
     % 	\item Advisor:  \href{https://www.cs.utah.edu/~thermans/}{Dr. Tucker Hermans}
     % \end{list2}\vspace{-1.5mm}
     \textbf{BMS College of Engineering}, Bangalore, India %\hfill \texttt{GPA: 3.52}
     \\\vspace{1mm}%
-    \textsl{Bachelor of Engineering in Mechanical Engineering (Robotics)} \hfill \textbf{Sept 2011 -- May 2015}\\%
+    \textsl{Bachelor of Engineering in Mechanical Engineering } \hfill \textbf{Sept 2011 -- May 2015}\\%
     % \begin{list2}
     % 	\item Graduated with First Class Distinction.
     % \end{list2}\vspace{-1.5mm}
-    \textbf{Relevant Coursework:} Probabilistic Modeling, 3D Computer Vision, Artificial Intelligence, Motion Planning, Machine Learning, Convex Optimization, Robotics, Robot Control and System Identification.
+    \textbf{Relevant Coursework:} 3D Computer Vision, Artificial Intelligence,
+    Convex Optimization, Intro to Robotics, Intro to Robot Control,
+    Motion Planning, Machine Learning, Probabilistic Modeling, and
+    System Identification.
 
 
     %%%%%%%%%%%%%%%%%%%%
@@ -118,7 +135,7 @@
 
     \sectionline
     \section{\mysidestyle \textsc{Publications}}
-     ``Planning Multi-Fingered Grasps as Probabilistic Inference in a Learned Deep Network''; Qingkai Lu,
+     ``Planning Multi-Fingered Grasps as Probabilistic Inference in a Learned Deep Network''; Qingkai Lu,\\
      \mbox{\bf Kautilya Chenna}, Balakumar Sundaralingam, Tucker Hermans; \textit{International Symposium on\\ Robotics Research (ISRR),} 2017. \texttt{[\href{http://www.cs.utah.edu/~thermans/papers/lu-isrr2017-deep-multifinger-grasping.pdf}{PDF}]} \texttt{[\href{https://robot-learning.cs.utah.edu/project/grasp\_inference}{CODE}]}%
 
 
@@ -128,6 +145,30 @@
 
     \sectionline
     \section{\mysidestyle \textsc{Selected \\ Projects}}
+
+    \textbf{Object Detection and Segmentation in Point Cloud data using PointNet} \hfill \textbf{January 2018}
+    \begin{list2}
+        \item Trained modified \textbf{PointNet} model on \textbf{YCB object dataset} and \textbf{BigBird dataset}.
+        \item Model runs at \textbf{24 fps} on a NVIDIA GeForce 1060 GPU with an accuracy of 88.3\%.
+    \end{list2}\vspace{-3.2mm}
+
+    \textbf{Grasp Collision detection using Convolutional Neural Networks} \hfill \textbf{Ongoing}
+    \begin{list2}
+        \item Developed a CNN model to detect collisions btw robot and environment using PointClouds and JointState.
+        \item Model classifies collisions with an \textbf{accuracy of 84.7\%} and is \textasciitilde 30\% faster than FCL.
+    \end{list2}\vspace{-3.2mm}
+
+    \textbf{Video Action recognition using Deep Learning}\hfill \textbf{October 2017}
+    \begin{list2}
+    \item Implemented a \textbf{Bi-Directional LSTM Model} on \textbf{VGG16} Net using Keras to classify actions in scenes.
+    \item Achieved a Mean Average Precision of \textbf{15.7 mAP} compared to the State of the Art of 21.4 mAP.
+    \end{list2}\vspace{-3.2mm}
+
+    \textbf{Autonomous Grasp Inference and Execution using Baxter and KUKA lwr4 Robots}\hfill \textbf{January 2017}
+    \begin{list2}
+        \item Designed an end-to-end grasping pipeline to grasp objects on a table autonomously.
+        \item Training data was collected in Gazebo simulation and tested in real world. [\href{https://robot-learning.cs.utah.edu/project/grasp\_inference}{ISRR 2017}]
+    \end{list2}\vspace{-3.2mm}
 
     \textbf{Others:} Motion Planning: TrajOpt, RRT and Variants, RealTime RRT*; Image Segmentation with GMM, Image De-noising using MRF;
 
