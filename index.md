@@ -21,4 +21,4 @@ Omron Research Center of America
 Network"; Qingkai Lu, **Kautilya Chenna**, Balakumar Sundaralingam, 
 Tucker Hermans; *International Symposium on Robotics Research (ISRR),* 2017. 
 [[`PDF`](http://www.cs.utah.edu/~thermans/papers/lu-isrr2017-deep-multifinger-grasping.pdf)] 
-[[`CODE`](https://robot-learning.cs.utah.edu/project/grasp\_inference)]
+[[`CODE`](https://robot-learning.cs.utah.edu/project/grasp_inference)]
